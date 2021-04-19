@@ -1,0 +1,38 @@
+
+
+
+#Load built in bata  as an R object
+pine <- Loblolly
+str(pine)
+head(pine, 3)
+tail(pine, 3)
+pines
+summary(pine)
+
+# Calculate sample size 
+library(tidyverse)
+chicks <- as_tibble(ChickWeight)
+
+# note the distinction between "nrow' and the 
+# 'true' sample size
+nrow(chicks)
+unique(chicks$Chicks )
+
+
+# Mean for chickweights
+
+# Load packages
+library(tidyverse)
+
+# Load data
+
+datasets::ChickWeight
+chicks %>% 
+  filter(Time == 20)%>% 
+group_by(Diet)
+chicks %>% 
+  summarise(mean_wt = mean(weight))
+mean(chicks$weight)
+
+
+          
